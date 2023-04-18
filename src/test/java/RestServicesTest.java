@@ -11,7 +11,7 @@ public class RestServicesTest {
             "3, 10000, 3000, 20000",
             "2, 100000, 60000, 150000"
     })
-    public void testRestService(int expected, int income, int expences, int threshold){
+    public void testRestService(int expected, int income, int expences, int threshold) {
 
         RestService service = new RestService();
         int actual = service.calculate(income, expences, threshold);
